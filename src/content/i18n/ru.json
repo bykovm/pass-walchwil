@@ -1,0 +1,19 @@
+{
+  "skipLink.label": "Перейти к содержимому",
+  "search.label": "Поиск",
+  "search.ctrlKey": "Ctrl",
+  "search.cancelLabel": "Отмена",
+  "search.devWarning": "Поиск работает только в сборке. Запустите npm run build и посмотрите на результат в npm run preview.",
+  "themeSelect.accessibleLabel": "Выберите тему",
+  "themeSelect.dark": "Тёмная",
+  "themeSelect.light": "Светлая",
+  "themeSelect.auto": "Авто",
+  "languageSelect.accessibleLabel": "Выберите язык",
+  "menuButton.accessibleLabel": "Меню",
+  "sidebarNav.accessibleLabel": "Основное",
+  "pagefind.label": "Поиск",
+  "pagefind.clearSearch": "Очистить",
+  "pagefind.filterBy": "Фильтр по {label}",
+  "pagefind.noResults": "Ничего не найдено",
+  "pagefind.viewResults": "Показать результаты"
+}
