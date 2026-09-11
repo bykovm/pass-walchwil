@@ -2,40 +2,25 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+// https://astro.build/config
 export default defineConfig({
-  site: 'https://pass-walchwil.ch',
-  integrations: [
-    starlight({
-      title: {
-        ru: 'Знания для собеседований на гражданство: Walchwil',
-      },
-      defaultLocale: 'ru',
-      locales: {
-        ru: { label: 'Русский', lang: 'ru' },
-       },
-      editLink: {
-        baseUrl: 'https://github.com/bykovm/pass-walchwil/edit/main/',
-      },
-      lastUpdated: true,
-      sidebar: [
-		  {
-			label: 'Начало',
-			items: [
-			  {
-				label: 'Главная',
-				link: '/ru/index',
-			  },
+	integrations: [
+		starlight({
+			title: 'My Docs',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			sidebar: [
+				{
+					label: 'Guides',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Example Guide', slug: 'guides/example' },
+					],
+				},
+				{
+					label: 'Reference',
+					items: [{ autogenerate: { directory: 'reference' } }],
+				},
 			],
-		  },
-		  {
-			label: 'Walchwil',
-			items: [{ autogenerate: { directory: 'ru/walchwil' } }],
-		  },
-		  {
-			label: 'Справочник',
-			items: [{ autogenerate: { directory: 'ru/reference' } }],
-		  },
-		]
-    }),
-  ],
+		}),
+	],
 });
